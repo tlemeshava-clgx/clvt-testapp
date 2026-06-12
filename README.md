@@ -1,1 +1,1 @@
-There is test application for github actins workflow.
+There is test application for github actions workflow.
