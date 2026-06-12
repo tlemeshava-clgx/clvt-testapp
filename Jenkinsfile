@@ -12,6 +12,7 @@ slaveTemplates = new PodTemplates()
 def containerName = "dotnet-build-${UUID.randomUUID()}".take(35) - ~'-$'
 def label = "windows-container-${containerName}"
 def dImage = "us-docker.pkg.dev/clgx-artregistry-mgt-prd-3b27/edg-legacy-us-diabloplus-docker-local/windows-dotnet-thor:latest"
+def location = "us-central1"
 
 slaveTemplates.getPodTemplate(label, containerName, dImage) {  
     node(label){
